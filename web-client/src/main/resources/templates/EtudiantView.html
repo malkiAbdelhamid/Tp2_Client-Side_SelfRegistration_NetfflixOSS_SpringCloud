@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<table border="1">
+    <tr>
+        <th> NomEtudiant</th>
+        <th> Promo</th>
+        <th>NomFormation</th>
+        <th> Duree</th>
+    </tr>
+
+    <tr>
+        <td th:text="${esiEtudiant.nom}"></td>
+        <td th:text="${esiEtudiant.promo}"></td>
+        <td th:text="${esiEtudiant.formation.nom}"></td>
+        <td th:text="${esiEtudiant.formation.duree}"></td>
+    </tr>
+</table>
+
+</body>
+</html>
